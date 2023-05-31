@@ -5,8 +5,8 @@
     "start": "dotnet fable watch ./src/SaferStorybook.Client --outDir ./src/SaferStorybook.Client/.fable-build --run vite",
     "prebuild": "dotnet tool restore",
     "build": "dotnet fable ./src/SaferStorybook.Client --outDir ./src/SaferStorybook.Client/.fable-build --run vite build",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "dotnet fable watch ./src/SaferStorybook.Client --outDir ./src/SaferStorybook.Client/.fable-build --run storybook dev -p 6006",
+    "build-storybook": "dotnet fable watch ./src/SaferStorybook.Client --outDir ./src/SaferStorybook.Client/.fable-build --run storybook build"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.18",
