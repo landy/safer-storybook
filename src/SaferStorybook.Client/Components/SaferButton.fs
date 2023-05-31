@@ -10,5 +10,6 @@ type SaferButtonProps = {
 let SaferButton (props: SaferButtonProps) =
     Html.input [
         prop.type'.button
+        prop.className "btn btn-primary"
         prop.value props.Label
     ]
